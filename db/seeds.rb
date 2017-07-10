@@ -2,10 +2,10 @@
 Product.destroy_all
 
 
-10.times do |index|
-  Product.create!(name: "iPhone 7",
-                        price: "2.50",
-                        category: "Electronics",
-                        description: "Cell Phone")
+100.times do |index|
+  Product.create!(name: Faker::Commerce.product_name,
+                        price: Faker::Commerce.price,
+                        category: Faker::Commerce.department(1),
+                        description: Faker::ChuckNorris.fact)
 
 end
