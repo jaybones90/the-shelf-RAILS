@@ -16,6 +16,8 @@ class OrderItemsController < ApplicationController
     redirect_to cart_path
   end
 
+  
+
 private
   def order_item_params
     params.require(:order_item).permit(:quantity, :product_id)

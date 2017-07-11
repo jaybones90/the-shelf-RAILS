@@ -1,0 +1,4 @@
+
+function talk() {
+  alert('hey');
+}

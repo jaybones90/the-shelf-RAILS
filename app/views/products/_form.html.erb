@@ -1,5 +1,10 @@
-<%= form_for @order_item do |f| %>
-  <%= f.hidden_field :product_id, value: @product.id %>
-  <%= f.number_field :quantity, value: 1 %>
-  <%= f.submit "Add to cart" %>
+<%= form_for @product, remote: true do |f| %>
+
+  <%= f.label :name, "This damn name" %>
+  <%= f.text_field :name %>
+  <%= f.label :price, "Prize" %>
+  <%= f.number_field :price %>
+  <%= f.label :description, "Describez" %>
+  <%= f.text_field :description %>
+  <%= f.submit "Add Product" %>
 <% end %>
