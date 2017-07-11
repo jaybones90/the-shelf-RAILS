@@ -17,6 +17,20 @@ class OrderItemsController < ApplicationController
     redirect_to cart_path
   end
 
+  def update
+    @order = current_order
+    @item = @order.order_items.find(params[:id])
+    @item.quantity = params[:order_item][:quantity].to_i
+    if @item.quantity == 0
+      @item.destroy
+      @order.save
+      redirect_to cart_path
+    else
+      @item.save
+      redirect_to cart_path
+    end
+  end
+
 
 
 private
