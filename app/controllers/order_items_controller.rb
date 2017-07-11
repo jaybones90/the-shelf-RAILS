@@ -2,6 +2,7 @@ class OrderItemsController < ApplicationController
 
   def create
     @order = current_order
+    @order.account_id = current_user.account.id
     @item = @order.order_items.new(order_item_params)
     @order.save
     session[:order_id] = @order.id
@@ -16,7 +17,7 @@ class OrderItemsController < ApplicationController
     redirect_to cart_path
   end
 
-  
+
 
 private
   def order_item_params

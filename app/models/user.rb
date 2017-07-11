@@ -4,4 +4,13 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
+  after_create :save_account
+
+  def save_account
+    account = Account.create(:user_id => self.id)
+    self.account_id = account.id
+  end
+
+
+
 end
