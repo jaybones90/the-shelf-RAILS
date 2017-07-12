@@ -54,19 +54,14 @@ ul {
 }
 
 .color-block {
-  .exit {
-   text-align: right;
-   margin-right: .75em;
-   margin-top: .5em;
-   font-size: 20px;
-  }
-  opacity: .7;
   height: 100%;
   width: 100%;
   position: fixed;
-  background-color: black;
-  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 55;
   .overlay {
+    opacity: revert;
+    z-index: 55;
     max-width: 800px;
     margin-top: 300px;
     margin-bottom: 500px;
@@ -74,8 +69,35 @@ ul {
     margin-right: auto;
     border-radius: 10px;
     background-color: white;
-    border: 2px dotted white;
+    box-shadow: 3px 3px 30px black;
     height: 50%;
     width: 75%;
+    .exit {
+      text-align: right;
+      margin-right: .75em;
+      margin-top: .5em;
+      font-size: 20px;
+
+    }
   }
 }
+
+.product-img {
+  margin-left: 1em;
+  width: 500px;
+  height: 650px;
+  position: fixed;
+  background-repeat: no-repeat;
+}
+
+.img-in-grid {
+  margin-left: 2em;
+  border-radius: 10px;
+  width: 350px;
+  height: 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  position: relative;
+  }

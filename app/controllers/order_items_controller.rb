@@ -1,5 +1,5 @@
 class OrderItemsController < ApplicationController
-
+    before_action :authenticate_user!, only: [:create]
   def create
     @order = current_order
     @order.account_id = current_user.account.id
