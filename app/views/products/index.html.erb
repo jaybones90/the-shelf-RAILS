@@ -7,8 +7,8 @@
   <h2>Products</h2>
   <div class="products">
     <% @products.each do |product| %>
-     <p><%= link_to product.name, product%></p>
-
+      <%= image_tag product.avatar.url(:thumb) %>
+      <p><%= link_to product.name, product, class: 'product', remote: true %></p>
     <% end %>
   </div>
 </div>

@@ -7,8 +7,11 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
+    <div class="test">
+      
+    </div>
+
     <div class="my-nav">
       <div class="container">
         <ul>
@@ -32,6 +35,9 @@
         </div>
         <p class="text-style"><%= flash[:alert] %></p>
         <p class="text-style"><%= flash[:notice] %></p>
+
+
+
         <%= yield %>
       </div>
     </div>

@@ -52,3 +52,30 @@ ul {
 .cart {
   margin-top: 8em;
 }
+
+.color-block {
+  .exit {
+   text-align: right;
+   margin-right: .75em;
+   margin-top: .5em;
+   font-size: 20px;
+  }
+  opacity: .7;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: black;
+  z-index: 50;
+  .overlay {
+    max-width: 800px;
+    margin-top: 300px;
+    margin-bottom: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    background-color: white;
+    border: 2px dotted white;
+    height: 50%;
+    width: 75%;
+  }
+}
