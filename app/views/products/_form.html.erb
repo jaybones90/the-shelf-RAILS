@@ -1,10 +1,11 @@
 <%= form_for @product, remote: true do |f| %>
-
   <%= f.label :name, "This damn name" %>
   <%= f.text_field :name %>
   <%= f.label :price, "Prize" %>
   <%= f.number_field :price %>
   <%= f.label :description, "Describez" %>
   <%= f.text_field :description %>
+  <%= f.label :avatar, "Upload Product Image" %>
+  <%= f.file_field :avatar %>
   <%= f.submit "Add Product" %>
 <% end %>

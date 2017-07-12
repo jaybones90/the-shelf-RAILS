@@ -1,6 +1,6 @@
 Features To Add
 
-1.) email signup confirmation
+1.) email signup confirmation √
 2.) paperclip integration for admins to load images for products
 3.) rails admin gem to admin dashboard
 4.) API call for some data to display on homepage

@@ -1,5 +1,6 @@
 
 <div class="container product">
+  <%= image_tag @product.avatar%>
   <h1><%= @product.name %></h1>
   <h3><%= number_to_currency @product.price %></h3>
   <p><%= @product.description %></p>
