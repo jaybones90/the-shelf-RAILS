@@ -9,7 +9,7 @@ Features To Add
 
 things to add:
 
-1.)tileize product Page
+1.)tileize product Page √
 2.) scope for product categories
 3.) autocomplete search bar for product categories
 4.) make image tiles clickable to open overlay div
