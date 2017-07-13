@@ -45,7 +45,13 @@ ul {
   text-align: center;
   margin-bottom: 10em;
     h1 {
-      margin-top: -140px;
+      color: grey;
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: blue;
+      font-size: 45px;
+      text-shadow: 2px 2px 4px black;
+      font-family: 'Ultra';
+      margin-top: -160px;
     }
 }
 
@@ -109,13 +115,20 @@ ul {
 
   .products {
     h2 {
+      border-radius: 10px;
+      margin-left: 35%;
+      margin-right: 35%;
       text-align: center;
+      font-size: 45px;
+      width: 30%;
+      border: 2px solid black;
+      font-family: 'Raleway';
     }
   }
 
 
 .btn-default {
-  margin-top: -9px;
+  margin-top: -2px;
 }
 
 .right {
@@ -125,9 +138,10 @@ ul {
 }
 
 
-  .tile
+  .tile {
     a {
       color: black;
+    }
   }
 
   .grid {
@@ -140,3 +154,11 @@ ul {
     display: inline-block;
     position: relative;
     }
+input, textarea, label, button {
+  display: block;
+}
+
+.form {
+  margin-left: 50%;
+
+}

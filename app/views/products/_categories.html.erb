@@ -1,0 +1,5 @@
+<%= link_to "All Products", products_path %>
+<br><br>
+<% Product.categories.each do |category| %>
+  <p> <%= link_to category, {controller: "products", action: 'index', filter: category } %> </p>
+<% end %>

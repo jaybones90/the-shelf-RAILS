@@ -2,6 +2,7 @@ class ProductsController < ApplicationController
 
   def index
     @products = Product.all
+    @filter_products = Product.category_search(params[:filter])
     respond_to do |format|
       format.html
       format.js
@@ -22,8 +23,8 @@ class ProductsController < ApplicationController
     if @product.save
       flash[:notice] = "New product added!"
       respond_to do |format|
-        format.html
-        format.js { redirect_to products_path }
+        format.html { redirect_to products_path }
+        format.js
       end
     else
       flash[:alert] = "please try again."

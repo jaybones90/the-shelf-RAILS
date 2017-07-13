@@ -1,20 +1,23 @@
-<% if is_admin? %>
-<%= link_to "Add a Product", new_product_path, id: "new_product_link", class: "btn btn-default", remote: true  %>
-<% end %>
+<div class="form">
+  <% if is_admin? %>
+  <%= link_to "Add a Product", new_product_path, id: "new_product_link", class: "btn btn-default", remote: true  %>
+  <% end %>
+
+</div>
+
+<div class="col-md-2 cat-div">
+  <%= render "categories" %>
+</div>
 
 
-<div class="container">
+<div class="container col-md-10">
   <div class="products">
     <h2>Products</h2>
-    <% @products.each do |product| %>
-    <div class="col-sm-3">
-      <div class="tile">
-        <%= link_to product, remote: true do %>
-          <div class="grid product" style="background-image:url(<%=product.avatar%>);"></div>
-        <% end %>
-        <p><%= link_to product.name, product, class: 'product btn btn-default', remote: true %></p>
-      </div>
-    </div>
+    <hr>
+    <% @filter_products.each do |product| %>
+
+      <%= render partial: 'product', locals: {a_product: product} %>
+
     <% end %>
   </div>
 </div>

@@ -1,0 +1,5 @@
+$('#new_product').remove()
+$('#new_product_link').show()
+$('.products').append("<%= j render partial:('product'), locals: {a_product: @product} %>")
+$(".cat-div").empty().append("<%= j render('categories') %> ")
+$('#new_product_link').show()

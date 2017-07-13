@@ -24,10 +24,16 @@ class OrderItemsController < ApplicationController
     if @item.quantity == 0
       @item.destroy
       @order.save
-      redirect_to cart_path
+      respond_to do |format|
+        format.html { redirect_to cart_path }
+        format.js
+      end
     else
       @item.save
-      redirect_to cart_path
+      respond_to do |format|
+        format.html { redirect_to cart_path }
+        format.js
+      end
     end
   end
 

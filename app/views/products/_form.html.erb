@@ -1,11 +1,22 @@
-<%= form_for @product, remote: true do |f| %>
-  <%= f.label :name, "This damn name" %>
-  <%= f.text_field :name %>
-  <%= f.label :price, "Prize" %>
-  <%= f.number_field :price %>
-  <%= f.label :description, "Describez" %>
-  <%= f.text_field :description %>
-  <%= f.label :avatar, "Upload Product Image" %>
-  <%= f.file_field :avatar %>
-  <%= f.submit "Add Product" %>
-<% end %>
+<!-- <div class="color-block">
+  <div class="overlay">
+    <div class="exit">
+      <span class="glyphicon glyphicon-eject"></span>
+    </div> -->
+    <div class="container">
+      <%= form_for @product, class: "product-new", remote: true do |f| %>
+      <%= f.label :name, "This damn name" %>
+      <%= f.text_field :name %>
+      <%= f.label :price, "Prize" %>
+      <%= f.number_field :price %>
+      <%= f.label :description, "Describez" %>
+      <%= f.text_field :description %>
+      <%= f.label :category, "Category" %>
+      <%= f.text_field :category %>
+      <%= f.label :avatar, "Upload Product Image" %>
+      <%= f.file_field :avatar %>
+      <%= f.submit "Add Product" %>
+      <% end %>
+    </div>
+  <!-- </div>
+</div> -->

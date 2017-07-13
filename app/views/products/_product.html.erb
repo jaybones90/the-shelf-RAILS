@@ -1,0 +1,9 @@
+
+<div class="col-sm-3">
+  <div class="tile">
+    <%= link_to product_path(a_product), remote: true do %>
+      <div class="grid product" style="background-image:url(<%=a_product.avatar%>);"></div>
+    <% end %>
+    <p><%= link_to a_product.name, a_product, class: 'product btn btn-default', remote: true %></p>
+  </div>
+</div>

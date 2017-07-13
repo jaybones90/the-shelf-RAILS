@@ -1,2 +1,7 @@
 
 $('#new_product_link').hide().after('<%= j render("form") %>')
+// $('.test').append("<%= j render('form')%>")
+// $(".color-block span").click(function() {
+//   $(".test").empty()
+// })
+$(".form").empty().append('<%= j render("form") %>').after().show('#new_product_link')
