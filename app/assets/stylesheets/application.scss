@@ -106,6 +106,37 @@ ul {
     text-align: center;
   }
 
-  span {
-    color: red;
+
+  .products {
+    h2 {
+      text-align: center;
+    }
   }
+
+
+.btn-default {
+  margin-top: -9px;
+}
+
+.right {
+  margin-top: -7px;
+  padding-right: 10em;
+  text-align: right;
+}
+
+
+  .tile
+    a {
+      color: black;
+  }
+
+  .grid {
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    position: relative;
+    }

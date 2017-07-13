@@ -4,14 +4,16 @@
 
 
 <div class="container">
-  <h2>Products</h2>
   <div class="products">
+    <h2>Products</h2>
     <% @products.each do |product| %>
     <div class="col-sm-3">
-      <%= link_to product, remote: true do %>
-      <%= image_tag product.avatar.url(:thumb), class: 'product'%>
-      <% end %>
-      <p><%= link_to product.name, product, class: 'product', remote: true %></p>
+      <div class="tile">
+        <%= link_to product, remote: true do %>
+          <div class="grid product" style="background-image:url(<%=product.avatar%>);"></div>
+        <% end %>
+        <p><%= link_to product.name, product, class: 'product btn btn-default', remote: true %></p>
+      </div>
     </div>
     <% end %>
   </div>
