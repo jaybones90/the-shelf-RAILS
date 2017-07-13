@@ -12,7 +12,7 @@ things to add:
 1.)tileize product Page √
 2.) scope for product categories
 3.) autocomplete search bar for product categories
-4.) make image tiles clickable to open overlay div
+4.) make image tiles clickable to open overlay div √
 5.) create similar items display
 6.) API call to bum fuck nowhere
 7.) google fonts for entire site

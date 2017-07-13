@@ -6,6 +6,8 @@ class ApplicationController < ActionController::Base
     current_user && (current_user.admin == true)
   end
 
+
+
   def current_order
     if session[:order_id]
       Order.find(session[:order_id])
