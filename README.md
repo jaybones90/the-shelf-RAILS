@@ -2,6 +2,8 @@
 
 #### This is an e-commerce site that allows users to add products to a shopping cart and integrates with the Stripe API to accept payments
 
+##### See the live site here: https://the-shelf-ecommerce.herokuapp.com/
+
 ## Setup/Installation Requirements
 
 * cd into the project folder on your local machine and then run:
